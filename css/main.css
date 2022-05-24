@@ -1,0 +1,54 @@
+body {
+    border-color: #736b5e;
+    background-color: #181a1b;
+    color: #e8e6e3;
+}
+
+* {
+    scrollbar-color: #454a4d #202324;
+}
+
+#gametable td {
+    width: 1.5em;
+    height: 1.5em;
+
+    background-color: gray;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    color: #181a1b;
+    text-align: center;
+}
+
+#gametable td.revealed {
+    background-color: lightgray;
+}
+
+
+#gametable td.flag {
+    background-image: url("../images/flag.png");
+}
+
+#gametable td.flag {
+    background-image: url("../images/flag.png");
+}
+
+
+/* Debugging only */
+#gametable td.mine {
+    background-color: blue;
+}
+
+
+#gametable.revealed td.flag:not(.mine) {
+    background-color: red;
+}
+
+#gametable.revealed td.mine:not(.flag) {
+    background-image: url("../images/mine.png");
+}
+
+#gametable.revealed td.mine.revealed {
+    background-color: red;
+}
