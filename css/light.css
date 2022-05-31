@@ -6,8 +6,8 @@
     --text-color: #181a1b;
     --scrollbar-color: #454a4d #202324;
     
-    --cell-color: #181a1b;
     --cell-background-color: #d8d6d3;
+    --cell-hover-background-color: white;
     --cell-revealed-background-color: #c8c6c3;
 
     --false-flag-background-color: red;

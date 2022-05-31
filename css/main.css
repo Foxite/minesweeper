@@ -16,30 +16,25 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    
-    color: var(--cell-color);
+
     text-align: center;
+}
+
+#gametable td:hover {
+    background-color: var(--cell-hover-background-color);
 }
 
 #gametable td.revealed {
     background-color: var(--cell-revealed-background-color);
 }
 
-
 #gametable td.flag {
     background-image: url("../images/flag.png");
 }
 
-#gametable td.flag {
-    background-image: url("../images/flag.png");
-}
-
-
-/* Debugging only */
 #gametable.debugMode td.mine {
     background-color: blue;
 }
-
 
 #gametable.revealed td.flag:not(.mine) {
     background-color: var(--false-flag-background-color);
