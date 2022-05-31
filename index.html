@@ -11,7 +11,11 @@
             </header>
             <hr>
             <section id="controls">
-                controls go here
+                <label for="width">Width:</label> <input type="number" min="2" value="10" id="width" />
+                <label for="height">Height:</label> <input type="number" min="2" value="10" id="height" />
+                <label for="density">Mine density:</label> <input type="number" min="1" max="99" value="30" id="density" />%<br>
+                <label for="debug">Debug mode:</label> <input type="checkbox" id="debug" />
+                <button id="regenerate">Regenerate</button>
             </section>
             <section id="game">
                 <table id="gametable">

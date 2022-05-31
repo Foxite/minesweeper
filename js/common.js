@@ -12,6 +12,8 @@ function generate(width, height, freq) {
     table.setAttribute("data-width", width);
     table.setAttribute("data-height", height);
 
+    table.classList.remove("revealed");
+
     for (let y = 0; y < height; y++) {
         const row = document.createElement("tr");
         for (let x = 0; x < width; x++) {
@@ -36,8 +38,6 @@ function generate(width, height, freq) {
         }
         table.appendChild(row);
     }
-    
-    console.log(getWidth(), getHeight());
 
     for (let y = 0; y < height; y++) {
         const row = table.rows[y];

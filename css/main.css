@@ -36,7 +36,7 @@ body {
 
 
 /* Debugging only */
-#gametable td.mine {
+#gametable.debugMode td.mine {
     background-color: blue;
 }
 
