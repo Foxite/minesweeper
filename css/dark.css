@@ -1,0 +1,13 @@
+:root {
+    --border-color: #736b5e;
+    --background-color: #181a1b;
+    --text-color: #e8e6e3;
+    --scrollbar-color: #454a4d #202324;
+    
+    --cell-color: #181a1b;
+    --cell-background-color: gray;
+    --cell-revealed-background-color: lightgray;
+
+    --false-flag-background-color: red;
+    --mine-background-color: red;
+}

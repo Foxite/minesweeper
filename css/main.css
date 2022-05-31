@@ -1,28 +1,28 @@
 body {
-    border-color: #736b5e;
-    background-color: #181a1b;
-    color: #e8e6e3;
+    /*border-color: var(--border-color);*/
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 * {
-    scrollbar-color: #454a4d #202324;
+    scrollbar-color: var(--scrollbar-color);
 }
 
 #gametable td {
     width: 1.5em;
     height: 1.5em;
 
-    background-color: gray;
+    background-color: var(--cell-background-color);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     
-    color: #181a1b;
+    color: var(--cell-color);
     text-align: center;
 }
 
 #gametable td.revealed {
-    background-color: lightgray;
+    background-color: var(--cell-revealed-background-color);
 }
 
 
@@ -42,7 +42,7 @@ body {
 
 
 #gametable.revealed td.flag:not(.mine) {
-    background-color: red;
+    background-color: var(--false-flag-background-color);
 }
 
 #gametable.revealed td.mine:not(.flag) {
@@ -50,5 +50,5 @@ body {
 }
 
 #gametable.revealed td.mine.revealed {
-    background-color: red;
+    background-color: var(--mine-background-color);
 }

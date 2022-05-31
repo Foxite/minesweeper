@@ -3,25 +3,31 @@
     <head>
         <title>Minesweeper</title>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" id="themeLink" href="css/dark.css">
     </head>
     <body>
-        <main>
+        <div id="container">
             <header>
                 <h1>Minesweeper</h1>
             </header>
             <hr>
-            <section id="controls">
-                <label for="width">Width:</label> <input type="number" min="2" value="10" id="width" />
-                <label for="height">Height:</label> <input type="number" min="2" value="10" id="height" />
-                <label for="density">Mine density:</label> <input type="number" min="1" max="99" value="30" id="density" />%<br>
-                <label for="debug">Debug mode:</label> <input type="checkbox" id="debug" />
-                <button id="regenerate">Regenerate</button>
-            </section>
-            <section id="game">
-                <table id="gametable">
-                </table>
-            </section>
-        </main>
+            <main>
+                <section id="controls">
+                    <table>
+                        <tr><td><label for="width">Width:</label></td><td><input type="number" min="2" value="10" id="width" /></td></tr>
+                        <tr><td><label for="height">Height:</label></td><td><input type="number" min="2" value="10" id="height" /></td></tr>
+                        <tr><td><label for="density">Mine density:</label></td><td><input type="number" min="1" max="99" value="30" id="density" />%</td></tr>
+                        <tr><td><label for="debug">Debug mode:</label></td><td><input type="checkbox" id="debug" /></td></tr>
+                        <tr><td><label for="themeSelect">Theme: </label></td><td><select id="themeSelect"><option value="dark">Dark</option><option value="light">Light</option></select></td></tr>
+                        <tr><td><button id="regenerate">Regenerate</button></td></tr>
+                    </table>
+                </section>
+                <section id="game">
+                    <table id="gametable">
+                    </table>
+                </section>
+            </main>
+            </div>
         <script src="js/common.js"></script>
         <script src="js/ui.js"></script>
     </body>
